@@ -7,10 +7,24 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
+    title: "Rental Car Website",
+    status: "completed",
+    description: "Developed a web-based car rental system to improve booking efficiency and data management.",
     tag: ["All", "Web"],
+    tools: [
+      {
+        src: "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white",
+        alt: "HTML5",
+      },
+      {
+        src: "https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white",
+        alt: "TypeScript",
+      },
+      {
+        src: "https://img.shields.io/badge/Kotlin-B125EA?style=for-the-badge&logo=kotlin&logoColor=white",
+        alt: "Kotlin",
+      },
+    ],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -113,7 +127,9 @@ const ProjectsSection = () => {
             <ProjectCard
               key={project.id}
               title={project.title}
+              status={project.status}
               description={project.description}
+              tools={project.tools || []}
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
