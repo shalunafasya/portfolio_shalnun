@@ -3,6 +3,10 @@ import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
+import GithubIcon from "../../../public/github-icon.svg";
+import PlayIcon from "../../../public/playIcon.svg";
+import SpreadIcon from "../../../public/excelIcon.svg";
+import LinkIcon from "../../../public/linkIcon.svg";
 
 const projectsData = [
   {
@@ -17,61 +21,119 @@ const projectsData = [
         alt: "HTML5",
       },
       {
-        src: "https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white",
-        alt: "TypeScript",
+        src: "https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white",
+        alt: "PHP",
       },
       {
-        src: "https://img.shields.io/badge/Kotlin-B125EA?style=for-the-badge&logo=kotlin&logoColor=white",
-        alt: "Kotlin",
+        src: "https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white",
+        alt: "Boostrap",
       },
     ],
-    gitUrl: "/",
-    previewUrl: "/",
+    doc : [
+    { href: "https://github.com/shalunafasya/GarasiProject", icon: GithubIcon },
+  ],
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
+    title: "Articles Management",
+    status: "completed",
+    description: "Developed article management platform with role-based access (User & Admin). Implemented secure authentication, form validation with Zod and RHF, API integration, and reusable UI components to ensure scalability and good user experience.",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tools: [
+      {
+        src: "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
+        alt: "React",
+      },
+      {
+        src : "https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white",
+        alt : "Next.js",
+      },
+      {
+        src: "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
+        alt: "Tailwind CSS",
+      }
+    ],
+    doc : [
+      { href: "https://github.com/shalunafasya/Articles-Management", icon: GithubIcon },
+      { href: "https://articles-next-js-2exa.vercel.app/login", icon: PlayIcon },
+    ],
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
+    title: "Lipmatch",
+    status: "completed",
+    description: "Developed the Lipmatch Decision Support System to assist users in selecting optimal lip products based on lip conditions and user preferences.",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tools : [
+      {
+        src: "https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white",
+        alt: "PHP",
+      },
+      {
+        src: "https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white",
+        alt: "Boostrap",
+      },
+      {
+        src: "https://img.shields.io/badge/Codeigniter-EF4223?style=for-the-badge&logo=codeigniter&logoColor=white",
+        alt: "CodeIgniter",
+      },
+    ],
+    doc : [
+      { href: "https://github.com/shalunafasya/Lipmatch", icon: GithubIcon },
+    ],
   },
   {
     id: 4,
-    title: "Food Ordering Application",
+    title: "BNEXT",
     description: "Project 4 description",
     image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Web"],
+    tools: [
+      {
+        src: "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
+        alt: "React",
+      },
+      {
+        src : "https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white",
+        alt : "Next.js",
+      },
+      {
+        src: "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
+        alt: "Tailwind CSS",
+      }
+    ],
   },
   {
     id: 5,
-    title: "React Firebase Template",
+    title: "Bengkel Saku",
+    status: "ongoing",
     description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tools: [
+      { src: "https://img.shields.io/badge/Kotlin-B125EA?style=for-the-badge&logo=kotlin&logoColor=white", 
+        alt: "Kotlin"
+      },
+      { src: "https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=for-the-badge&logo=Jetpack%20Compose&logoColor=white",
+        alt: "Jetpack Compose"
+      }
+    ],
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
+    title: "HRM Testing",
+    status: "ongoing",
     description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Mobile"],
+    tools: [
+      {
+        src : "https://img.shields.io/badge/Google%20Sheets-34A853?style=for-the-badge&logo=google-sheets&logoColor=white",
+        alt : "spreadsheet",
+      },
+    ],
+    doc : [
+      { href: "https://github.com/shalunafasya/HRM-Testing", icon: SpreadIcon },
+      { href: "", icon: LinkIcon}
+    ],
   },
 ];
 
@@ -133,6 +195,7 @@ const ProjectsSection = () => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
+              doc={project.doc}
             />
           </motion.li>
         ))}
