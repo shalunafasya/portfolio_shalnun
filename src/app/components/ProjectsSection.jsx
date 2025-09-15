@@ -54,7 +54,7 @@ const projectsData = [
       }
     ],
     doc : [
-      { href: "https://github.com/shalunafasya/Articles-Management", icon: GithubIcon },
+      { href: "https://github.com/shalunafasya/Articles-Next.js", icon: GithubIcon },
       { href: "https://articles-next-js-2exa.vercel.app/login", icon: PlayIcon },
     ],
   },
@@ -79,7 +79,7 @@ const projectsData = [
       },
     ],
     doc : [
-      { href: "https://github.com/shalunafasya/Lipmatch", icon: GithubIcon },
+      { href: "https://github.com/shalunafasya/LIPMATCH", icon: GithubIcon },
     ],
   },
   {
@@ -108,7 +108,7 @@ const projectsData = [
     title: "Bengkel Saku",
     status: "ongoing",
     description: "Authentication and CRUD operations",
-    tag: ["All", "Web"],
+    tag: ["All", "Mobile"],
     tools: [
       { src: "https://img.shields.io/badge/Kotlin-B125EA?style=for-the-badge&logo=kotlin&logoColor=white", 
         alt: "Kotlin"
@@ -116,6 +116,9 @@ const projectsData = [
       { src: "https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=for-the-badge&logo=Jetpack%20Compose&logoColor=white",
         alt: "Jetpack Compose"
       }
+    ],
+    doc: [
+      { href: "https://github.com/shalunafasya/BengkelSaku", icon: GithubIcon },
     ],
   },
   {
@@ -131,7 +134,7 @@ const projectsData = [
       },
     ],
     doc : [
-      { href: "https://github.com/shalunafasya/HRM-Testing", icon: SpreadIcon },
+      { href: "https://elva-hrm.com/", icon: SpreadIcon },
       { href: "", icon: LinkIcon}
     ],
   },
