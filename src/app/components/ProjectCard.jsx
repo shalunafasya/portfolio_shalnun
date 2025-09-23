@@ -20,14 +20,14 @@ const ProjectCard = ({
             <span
               className={`flex items-center gap-1 text-sm px-2 py-0.5 rounded-full ${
                 status === "ongoing"
-                  ? "bg-yellow-900 text-yellow-400 md:bg-transparent md:text-transparent md:p-0 md:gap-0"
+                  ? "bg-yellow-900 text-yellow-400"
                   : "bg-green-900 text-green-400"
               }`}
             >
               <span
                 className={`w-2 h-2 rounded-full ${
                   status === "ongoing"
-                    ? "bg-yellow-400 md:bg-green-400"
+                    ? "bg-yellow-400"
                     : "bg-green-400"
                 }`}
               ></span>

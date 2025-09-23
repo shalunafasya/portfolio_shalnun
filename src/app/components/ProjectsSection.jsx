@@ -85,7 +85,7 @@ const projectsData = [
   {
     id: 4,
     title: "BNEXT",
-    description: "Project 4 description",
+    description: "Contributed to the modernization of the legacy EXA banking system into BNEXT, focusing on performance and user experience.",
     image: "/images/projects/4.png",
     tag: ["All", "Web"],
     tools: [
@@ -107,7 +107,7 @@ const projectsData = [
     id: 5,
     title: "Bengkel Saku",
     status: "ongoing",
-    description: "Authentication and CRUD operations",
+    description: "Bengkel Saku is an AI-based app that predicts vehicle maintenance, reminds users of service schedules, and offers solutions to prevent breakdowns.",
     tag: ["All", "Mobile"],
     tools: [
       { src: "https://img.shields.io/badge/Kotlin-B125EA?style=for-the-badge&logo=kotlin&logoColor=white", 
@@ -125,8 +125,8 @@ const projectsData = [
     id: 6,
     title: "HRM Testing",
     status: "ongoing",
-    description: "Project 5 description",
-    tag: ["All", "Mobile"],
+    description: "Performed manual testing on Elva-HRM website using test cases documented in spreadsheet. Executed fungsional,UI, and usability test.",
+    tag: ["All", "Testing"],
     tools: [
       {
         src : "https://img.shields.io/badge/Google%20Sheets-34A853?style=for-the-badge&logo=google-sheets&logoColor=white",
@@ -178,6 +178,11 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="Mobile"
           isSelected={tag === "Mobile"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Testing"
+          isSelected={tag === "Testing"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">

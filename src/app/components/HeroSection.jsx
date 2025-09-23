@@ -33,7 +33,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            I am a software developer specializing in front-end development. I am passionate about building responsive, visually appealing, and user-friendly web applications. I am highly driven to learn, adapt, and contribute innovative ideas that create value for both users and the company.
+            I am a software developer specializing in front-end development. I am passionate about building responsive, visually appealing, and user-friendly web applications. Highly driven to learn, adapt, and contribute innovative ideas that create value for both users and the company.
           </p>
           <div>
             <Link
