@@ -13,7 +13,8 @@ const projectsData = [
     id: 1,
     title: "Rental Car Website",
     status: "completed",
-    description: "Developed a web-based car rental system to improve booking efficiency and data management.",
+    description:
+      "Developed a web-based car rental system to improve booking efficiency and data management.",
     tag: ["All", "Web"],
     tools: [
       {
@@ -29,15 +30,19 @@ const projectsData = [
         alt: "Boostrap",
       },
     ],
-    doc : [
-    { href: "https://github.com/shalunafasya/GarasiProject", icon: GithubIcon },
-  ],
+    doc: [
+      {
+        href: "https://github.com/shalunafasya/GarasiProject",
+        icon: GithubIcon,
+      },
+    ],
   },
   {
     id: 2,
     title: "Articles Management",
     status: "completed",
-    description: "Developed article management platform with role-based access (User & Admin). Implemented secure authentication, form validation with Zod and RHF, API integration, and reusable UI components to ensure scalability and good user experience.",
+    description:
+      "Developed article management platform with role-based access (User & Admin). Implemented secure authentication, form validation with Zod and RHF, API integration, and reusable UI components to ensure scalability and good user experience.",
     tag: ["All", "Web"],
     tools: [
       {
@@ -45,26 +50,33 @@ const projectsData = [
         alt: "React",
       },
       {
-        src : "https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white",
-        alt : "Next.js",
+        src: "https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white",
+        alt: "Next.js",
       },
       {
         src: "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
         alt: "Tailwind CSS",
-      }
+      },
     ],
-    doc : [
-      { href: "https://github.com/shalunafasya/Articles-Next.js", icon: GithubIcon },
-      { href: "https://articles-next-js-2exa.vercel.app/login", icon: PlayIcon },
+    doc: [
+      {
+        href: "https://github.com/shalunafasya/Articles-Next.js",
+        icon: GithubIcon,
+      },
+      {
+        href: "https://articles-next-js-2exa.vercel.app/login",
+        icon: PlayIcon,
+      },
     ],
   },
   {
     id: 3,
     title: "Lipmatch",
     status: "completed",
-    description: "Developed the Lipmatch Decision Support System to assist users in selecting optimal lip products based on lip conditions and user preferences.",
+    description:
+      "Developed the Lipmatch Decision Support System to assist users in selecting optimal lip products based on lip conditions and user preferences.",
     tag: ["All", "Web"],
-    tools : [
+    tools: [
       {
         src: "https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white",
         alt: "PHP",
@@ -78,14 +90,15 @@ const projectsData = [
         alt: "CodeIgniter",
       },
     ],
-    doc : [
+    doc: [
       { href: "https://github.com/shalunafasya/LIPMATCH", icon: GithubIcon },
     ],
   },
   {
     id: 4,
     title: "BNEXT",
-    description: "Contributed to the modernization of the legacy EXA banking system into BNEXT, focusing on performance and user experience.",
+    description:
+      "Contributed to the modernization of the legacy EXA banking system into BNEXT, focusing on performance and user experience.",
     image: "/images/projects/4.png",
     tag: ["All", "Web"],
     tools: [
@@ -94,28 +107,31 @@ const projectsData = [
         alt: "React",
       },
       {
-        src : "https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white",
-        alt : "Next.js",
+        src: "https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white",
+        alt: "Next.js",
       },
       {
         src: "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
         alt: "Tailwind CSS",
-      }
+      },
     ],
   },
   {
     id: 5,
     title: "Bengkel Saku",
     status: "ongoing",
-    description: "Bengkel Saku is an AI-based app that predicts vehicle maintenance, reminds users of service schedules, and offers solutions to prevent breakdowns.",
+    description:
+      "Bengkel Saku is an AI-based app that predicts vehicle maintenance, reminds users of service schedules, and offers solutions to prevent breakdowns.",
     tag: ["All", "Mobile"],
     tools: [
-      { src: "https://img.shields.io/badge/Kotlin-B125EA?style=for-the-badge&logo=kotlin&logoColor=white", 
-        alt: "Kotlin"
+      {
+        src: "https://img.shields.io/badge/Kotlin-B125EA?style=for-the-badge&logo=kotlin&logoColor=white",
+        alt: "Kotlin",
       },
-      { src: "https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=for-the-badge&logo=Jetpack%20Compose&logoColor=white",
-        alt: "Jetpack Compose"
-      }
+      {
+        src: "https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=for-the-badge&logo=Jetpack%20Compose&logoColor=white",
+        alt: "Jetpack Compose",
+      },
     ],
     doc: [
       { href: "https://github.com/shalunafasya/BengkelSaku", icon: GithubIcon },
@@ -125,17 +141,18 @@ const projectsData = [
     id: 6,
     title: "HRM Testing",
     status: "ongoing",
-    description: "Performed manual testing on Elva-HRM website using test cases documented in spreadsheet. Executed fungsional,UI, and usability test.",
+    description:
+      "Performed manual testing on Elva-HRM website using test cases documented in spreadsheet. Executed fungsional,UI, and usability test.",
     tag: ["All", "Testing"],
     tools: [
       {
-        src : "https://img.shields.io/badge/Google%20Sheets-34A853?style=for-the-badge&logo=google-sheets&logoColor=white",
-        alt : "spreadsheet",
+        src: "https://img.shields.io/badge/Google%20Sheets-34A853?style=for-the-badge&logo=google-sheets&logoColor=white",
+        alt: "spreadsheet",
       },
     ],
-    doc : [
+    doc: [
       { href: "https://elva-hrm.com/", icon: SpreadIcon },
-      { href: "", icon: LinkIcon}
+      { href: "", icon: LinkIcon },
     ],
   },
 ];
@@ -163,7 +180,12 @@ const ProjectsSection = () => {
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      <div
+        className="text-white flex flex-wrap justify-center items-center gap-2 py-3 
+                text-[10px] sm:text-xs md:text-sm lg:text-base 
+                [&>*]:px-1 sm:[&>*]:px-2 md:[&>*]:px-3 
+                [&>*]:py-0.5 sm:[&>*]:py-1"
+      >
         <ProjectTag
           onClick={handleTagChange}
           name="All"
@@ -185,6 +207,7 @@ const ProjectsSection = () => {
           isSelected={tag === "Testing"}
         />
       </div>
+
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
           <motion.li
