@@ -64,7 +64,7 @@ const projectsData = [
         icon: GithubIcon,
       },
       {
-        href: "https://articles-next-js-2exa.vercel.app/login",
+        href: "https://articles-next-js.vercel.app/",
         icon: PlayIcon,
       },
     ],
