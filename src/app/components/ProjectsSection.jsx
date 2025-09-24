@@ -151,8 +151,8 @@ const projectsData = [
       },
     ],
     doc: [
-      { href: "https://elva-hrm.com/", icon: SpreadIcon },
-      { href: "", icon: LinkIcon },
+      { href: "https://docs.google.com/spreadsheets/d/1JI2sqj7SE0_3lPrEnlWuWS5Wtb1NX-SJd2qMu2J0P_M/edit?usp=sharing", icon: SpreadIcon },
+      { href: "https://elva-hrm.com/", icon: LinkIcon },
     ],
   },
 ];
