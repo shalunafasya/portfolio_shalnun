@@ -116,6 +116,7 @@ const projectsData = [
       },
     ],
   },
+  
   {
     id: 5,
     title: "Bengkel Saku",
@@ -153,6 +154,24 @@ const projectsData = [
     doc: [
       { href: "https://docs.google.com/spreadsheets/d/1JI2sqj7SE0_3lPrEnlWuWS5Wtb1NX-SJd2qMu2J0P_M/edit?usp=sharing", icon: SpreadIcon },
       { href: "https://elva-hrm.com/", icon: LinkIcon },
+    ],
+  },
+  {
+    id: 7,
+    title: "Mantra",
+    description:
+      "Contributed to the modernization of the legacy EXA banking system into BNEXT, focusing on performance and user experience.",
+    image: "/images/projects/4.png",
+    tag: ["All", "Web"],
+    tools: [
+      {
+        src: "https://img.shields.io/badge/Vue%20js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D",
+        alt: "Vue",
+      },
+      {
+        src: "https://img.shields.io/badge/nuxt%20js-00C58E?style=for-the-badge&logo=nuxtdotjs&logoColor=white",
+        alt: "Nuxt.js",
+      },
     ],
   },
 ];
