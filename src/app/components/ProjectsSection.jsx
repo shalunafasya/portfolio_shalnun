@@ -42,7 +42,7 @@ const projectsData = [
     title: "Articles Management",
     status: "completed",
     description:
-      "Developed article management platform with role-based access (User & Admin). Implemented secure authentication, form validation with Zod and RHF, API integration, and reusable UI components to ensure scalability and good user experience.",
+      "Developed an article management platform with role-based access, focusing on scalable architecture and user-friendly experience.",
     tag: ["All", "Web"],
     tools: [
       {
