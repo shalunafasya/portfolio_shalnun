@@ -1,12 +1,12 @@
 "use client";
 import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
-import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 import GithubIcon from "../../../public/github-icon.svg";
 import PlayIcon from "../../../public/playIcon.svg";
 import SpreadIcon from "../../../public/excelIcon.svg";
 import LinkIcon from "../../../public/linkIcon.svg";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const projectsData = [
   {
@@ -176,6 +176,44 @@ const projectsData = [
   },
 ];
 
+const projectTabs = ["All", "Web", "Mobile", "Testing"];
+
+function ProjectTabs({ tag, handleTagChange }) {
+  const triggerClass = `
+    rounded-full
+    px-5 py-2
+    text-sm
+    font-medium
+    text-gray-300
+    transition-all
+    data-[state=active]:bg-purple-600
+    data-[state=active]:text-white
+    data-[state=active]:shadow-lg
+    data-[state=active]:shadow-purple-500/30
+  `;
+  return (
+    <div className="flex justify-center mb-8">
+      <Tabs
+        value={tag}
+        onValueChange={handleTagChange}
+        className="w-full flex justify-center"
+      >
+        <TabsList className="bg-white/5 backdrop-blur-md border border-white/10 rounded-full p-2 gap-2 shadow-lg">
+          {projectTabs.map((item) => (
+            <TabsTrigger
+              key={item}
+              value={item}
+              className={triggerClass}
+            >
+              {item}
+            </TabsTrigger>
+          ))}
+        </TabsList>
+      </Tabs>
+    </div>
+  );
+}
+
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
   const ref = useRef(null);
@@ -199,33 +237,11 @@ const ProjectsSection = () => {
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
-      <div
-        className="text-white flex flex-wrap justify-center items-center gap-2 py-3 
-                text-[10px] sm:text-xs md:text-sm lg:text-base 
-                [&>*]:px-1 sm:[&>*]:px-2 md:[&>*]:px-3 
-                [&>*]:py-0.5 sm:[&>*]:py-1"
-      >
-        <ProjectTag
-          onClick={handleTagChange}
-          name="All"
-          isSelected={tag === "All"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Testing"
-          isSelected={tag === "Testing"}
-        />
-      </div>
+      
+      <ProjectTabs
+        tag={tag}
+        handleTagChange={handleTagChange}
+      />
 
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (

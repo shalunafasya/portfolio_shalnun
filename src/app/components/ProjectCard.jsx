@@ -1,10 +1,8 @@
 import React from "react";
-import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Image from "next/image";
 
 const ProjectCard = ({
-  imgUrl,
   title,
   status,
   description,
@@ -12,13 +10,26 @@ const ProjectCard = ({
   doc = [],
 }) => {
   return (
-    <div className="border-purple-500/20 border-2 rounded-lg h-60 sm:h-48 md:h-96 lg:h-[30vh] relative">
-      <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
-        <div className="flex items-center gap-2 mb-2 justify-between">
-          <h5 className="text-xl font-semibold">{title}</h5>
+    <div className="
+      border border-white/10
+      rounded-lg
+      min-h-[240px]
+      sm:min-h-[260px]
+      md:min-h-[280px]
+      relative
+      bg-[#181818]
+      p-4
+      flex flex-col justify-between
+    ">
+      <div>
+        <div className="flex items-start justify-between gap-2 mb-2">
+          <h5 className="text-white sm:text-lg font-semibold leading-snug">
+            {title}
+          </h5>
+
           {status && (
             <span
-              className={`flex items-center gap-1 text-[12px] px-2 py-0.5 rounded-full ${
+              className={`shrink-0 flex items-center gap-1 text-[10px] sm:text-xs px-2 py-1 rounded-full ${
                 status === "ongoing"
                   ? "bg-yellow-900 text-yellow-400"
                   : "bg-green-900 text-green-400"
@@ -30,32 +41,48 @@ const ProjectCard = ({
                     ? "bg-yellow-400"
                     : "bg-green-400"
                 }`}
-              ></span>
-              <span className="md:hidden lg:inline">{status}</span>
+              />
+              <span>{status}</span>
             </span>
           )}
         </div>
-        <p className="text-[#ADB7BE] text-xs py-2">{description}</p>
-        <div className="flex flex-wrap gap-2 mt-3 mb-3">
+
+        <p className="text-[#ADB7BE] text-xs sm:text-sm py-2 line-clamp-4">
+          {description}
+        </p>
+
+        <div className="flex flex-wrap gap-2 mt-3">
           {tools.map((tool, index) => (
-            <img key={index} src={tool.src} alt={tool.alt} className="h-6" />
+            <img
+              key={index}
+              src={tool.src}
+              alt={tool.alt}
+              className="h-5 sm:h-6"
+            />
           ))}
         </div>
-        <div className="absolute bottom-4 left-4 flex flex-row gap-2 flex-wrap">
-          {doc.map((doc, idx) => (
-            <Link
-              key={idx}
-              href={doc.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 pt-3"
-            >
-              {doc.icon && (
-                <Image src={doc.icon} alt={`icon`} width={28} height={28} />
-              )}
-            </Link>
-          ))}
-        </div>
+      </div>
+
+      <div className="flex gap-3 flex-wrap mt-5">
+        {doc.map((doc, idx) => (
+          <Link
+            key={idx}
+            href={doc.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center"
+          >
+            {doc.icon && (
+              <Image
+                src={doc.icon}
+                alt="icon"
+                width={26}
+                height={26}
+                className="sm:w-7 sm:h-7"
+              />
+            )}
+          </Link>
+        ))}
       </div>
     </div>
   );
