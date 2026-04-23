@@ -77,7 +77,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a software developer specializing in front-end development, passionate about creating responsive and user-friendly web applications. A Bachelor of Informatics graduate from Ahmad Dahlan University, I have experience working on various projects that deliver functional and scalable web solutions. I enjoy turning ideas into interactive products while continuously learning new technologies to stay ahead in the fast-paced tech industry.
+            Hi, I’m Luna, a software developer passionate about creating scalable and impactful digital solutions. With a Bachelor’s degree in Informatics and experience across various projects, I enjoy solving problems, building products, and continuously growing in the tech industry.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton

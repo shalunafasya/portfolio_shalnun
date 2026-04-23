@@ -98,7 +98,7 @@ const projectsData = [
     id: 4,
     title: "BNEXT",
     description:
-      "Contributed to the modernization of the legacy EXA banking system into BNEXT, focusing on performance and user experience.",
+      "Contributed to the development of an operational banking system used to support teller and customer service transactions, improving efficiency and user experience.",
     image: "/images/projects/4.png",
     tag: ["All", "Web"],
     tools: [
@@ -160,7 +160,7 @@ const projectsData = [
     id: 7,
     title: "Mantra",
     description:
-      "Contributed to the modernization of the legacy EXA banking system into BNEXT, focusing on performance and user experience.",
+      "Contributed to a platform for managing collaboration between pentesters and clients, including project tracking, communication, and security testing workflows.",
     image: "/images/projects/4.png",
     tag: ["All", "Web"],
     tools: [
