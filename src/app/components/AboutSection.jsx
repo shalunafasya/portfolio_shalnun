@@ -30,18 +30,18 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>
-          <h3 className="text-bold text-purple-400">PT Otskyr Sembagi Mandara Nawasena</h3>
-          <h4>Frontend Engineer</h4>
+          <h4 className="text-bold text-purple-400">Frontend Engineer</h4>
+          <h3>PT Otskyr Sembagi Mandara Nawasena</h3>
           <p className="text-[12px]">Nov 2025 - April 2026</p>
         </li>
         <li>
-          <h3 className="text-bold text-purple-400">PT Bank Syariah Indonesia Tbk</h3>
-          <h4>Software Developer Intern</h4>
+          <h4 className="text-bold text-purple-400">Software Developer Intern</h4>
+          <h3>PT Bank Syariah Indonesia Tbk</h3>
           <p className="text-[12px]">Sep 2024 - Mar 2025</p>
           </li>
         <li>
-          <h3 className="text-bold text-purple-400">Bangkit Academy (Google, Tokopedia, Gojek, Traveloka) – Indonesia</h3>
-          <h4>Mobile Developer Cohort</h4>
+          <h4 className="text-bold text-purple-400">Mobile Developer Cohort</h4>
+          <h3>Bangkit Academy (Google, Tokopedia, Gojek, Traveloka)</h3>
           <p className="text-[12px]">Aug 2023 - Jan 2024</p>
         </li>
       </ul>
